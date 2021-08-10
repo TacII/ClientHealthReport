@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <Description>Shows the result of the Client Health Script by Anders Roedland.
+/Mathias Haas 2021-08-09</Description>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="ID5C6358F24BB64a1bA16E8D96795D8602">
@@ -13,7 +15,7 @@
       <Query>
         <DataSourceName>ID5C6358F24BB64a1bA16E8D96795D8602</DataSourceName>
         <CommandText>/****** Script for SelectTopNRows command from SSMS  ******/
-SELECT TOP (1000) [Hostname]
+SELECT [Hostname]
       ,[Domain]
       ,[LastLoggedOnUser]
       ,[OperatingSystem]
@@ -3731,7 +3733,7 @@ OS Disk</Value>
             <DataSetName>DataSet1</DataSetName>
             <Top>0.4in</Top>
             <Height>0.65625in</Height>
-            <Width>44.41667in</Width>
+            <Width>44.41666in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
